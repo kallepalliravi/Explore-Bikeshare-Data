@@ -1,0 +1,173 @@
+$ python bikeshare_2.py
+Hello! Let's explore some US bikeshare data!
+Which City you would like to analyze: chicago, new york city, washington:
+chicago
+Which Month? january, february, march, april, may, june or all:
+all
+Which Day? monday, tuesday, Wednesday, thursday, friday,saturday, sunday or
+ all:
+all
+---------------------------------------------------------------------------
+
+Your city selection was: chicago
+Your month selection was: all
+Your day selection was: all
+Shape of Dataframe for the selections: (300000, 12)
+---------------------------------------------------------------------------
+
+Press Enter to continue..............
+
+Would you like to see rows 0 to 5 of raw data:Enter yes or no.
+yes
+   Unnamed: 0          Start Time             End Time  Trip Duration  \
+0     1423854 2017-06-23 15:09:32  2017-06-23 15:14:53            321
+1      955915 2017-05-25 18:19:03  2017-05-25 18:45:53           1610
+2        9031 2017-01-04 08:27:49  2017-01-04 08:34:45            416
+3      304487 2017-03-06 13:49:38  2017-03-06 13:55:28            350
+4       45207 2017-01-17 14:53:07  2017-01-17 15:02:01            534
+
+                   Start Station                   End Station   User Type
+ \
+0           Wood St & Hubbard St       Damen Ave & Chicago Ave  Subscriber
+
+1            Theater on the Lake  Sheffield Ave & Waveland Ave  Subscriber
+
+2             May St & Taylor St           Wood St & Taylor St  Subscriber
+
+3  Christiana Ave & Lawrence Ave  St. Louis Ave & Balmoral Ave  Subscriber
+
+4         Clark St & Randolph St  Desplaines St & Jackson Blvd  Subscriber
+
+
+   Gender  Birth Year  month day_of_week  hour
+0    Male      1992.0      6      Friday    15
+1  Female      1992.0      5    Thursday    18
+2    Male      1981.0      1   Wednesday     8
+3    Male      1986.0      3      Monday    13
+4    Male      1975.0      1     Tuesday    14
+
+Would you like to see rows 5 to 10 of raw data:Enter yes or no.
+no
+---------------------------------------------------------------------------
+
+Press Enter to continue..............
+
+Calculating The Most Frequent Times of Travel...
+
+
+Most Common month: 6 ... count: 98081
+Most Common day: Tuesday ... count: 45912
+Most Common start hour: 17 ... count: 35992
+
+This took 0.1808605194091797 seconds.
+---------------------------------------------------------------------------
+
+Press Enter to continue..............
+
+ Calculating count by month, day and hour
+
+count by Month
+ month
+1    21809
+2    32057
+3    29639
+4    51659
+5    66755
+6    98081
+Name: month, dtype: int64
+
+count by Day
+ day_of_week
+Friday       43922
+Monday       44881
+Saturday     40885
+Sunday       38775
+Thursday     43095
+Tuesday      45912
+Wednesday    42530
+Name: day_of_week, dtype: int64
+
+count by hour
+ hour
+0      1686
+1       982
+2       609
+3       372
+4       467
+5      2437
+6      8246
+7     18380
+8     24134
+9     13691
+10    11952
+11    15040
+12    17467
+13    17559
+14    17596
+15    20108
+16    28742
+17    35992
+18    23512
+19    15715
+20    10301
+21     7103
+22     4895
+23     3014
+Name: hour, dtype: int64
+---------------------------------------------------------------------------
+
+Press Enter to continue..............
+
+Calculating The Most Popular Stations and Trip...
+
+Most Common Start Station: Streeter Dr & Grand Ave ... count: 6911
+Most Common Start Station: Streeter Dr & Grand Ave ... count: 7512
+Most Common Trip: Lake Shore Dr & Monroe St---->Streeter Dr & Grand Ave ...
+ count: 854
+
+This took 0.30265355110168457 seconds.
+---------------------------------------------------------------------------
+
+Press Enter to continue..............
+
+Calculating Trip Duration...
+
+Total travel time: 280871787
+Mean travel time: 936.23929
+
+This took 0.0019834041595458984 seconds.
+---------------------------------------------------------------------------
+
+Press Enter to continue..............
+
+Calculating User Stats...
+
+
+Count by:
+ User Type
+Customer       61110
+Dependent          1
+Subscriber    238889
+Name: User Type, dtype: int64
+
+
+Count by:
+ Gender
+Female     57758
+Male      181190
+Name: Gender, dtype: int64
+
+Earliest year of Birth: 1899 ... count: 14
+Most Recent year of Birth: 2016 count: 6
+Most Common year of Birth: 1989 ... count: 14666
+
+This took 0.11093354225158691 seconds.
+---------------------------------------------------------------------------
+
+
+Would you like to restart? Enter yes or no.
+no
+Thank You...Good Bye
+
+Ravi@Kallepalli-Home MINGW64 /c/users/Ravi/Python/Project/bikeshare
+$
